@@ -61,6 +61,14 @@ body {
 }
 
 .footer {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+
     background-color: var(--main-back-color);
 }
 
