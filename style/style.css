@@ -21,6 +21,9 @@ body {
 
 .header {
     background-color: rgb(43, 43, 43);
+
+    display: flex;
+    flex-direction: row;
 }
 
 .nav-menu {
@@ -49,4 +52,16 @@ body {
 
 .footer {
     background-color: blue;
+}
+
+.fs-header {
+    font-size: 1.5rem;
+}
+
+.site-logo {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    gap: 10px;
 }
