@@ -10,7 +10,7 @@
 
     $canGenerateSql = false;
 
-    if(!empty($id) && !empty($name))
+    if(!isset($id) && !isset($name))
     {
         $canGenerateSql = true;
     }
