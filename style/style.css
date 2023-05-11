@@ -77,6 +77,6 @@ body {
 
     transition: height 5s, width 5s;
 }
-.site-logo img {
+.site-logo img:hover {
     max-height: 100px;
 }
