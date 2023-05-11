@@ -31,9 +31,9 @@ body {
     flex-direction: row;
     flex-grow: 1;
 
-    gap: 10px;
+    gap: 25px;
 
-    margin: 10px;
+    margin-right: 10px;
 
     align-items: center;
     justify-content: right;
