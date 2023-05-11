@@ -4,7 +4,7 @@
 ?>
 
 <div class="content">
-    Content
+    Home Content
 </div>
 
 <?php require_once('./format/tail.php'); ?>
