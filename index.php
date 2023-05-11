@@ -4,7 +4,7 @@
 ?>
 
 <div class="header">
-    <a href="./home.php">- Home</a>
+    <a href="./index.php">- Home</a>
     <a href="./contact.php">Contact</a>
 </div>
 
