@@ -26,7 +26,11 @@
     </form>
 
     <div class="fs-code">
-        <?php echo("DELETE FROM hardmode_modes WHERE id={$id}"); ?>
+        <pre>
+            <code class="language-sql">
+                <?php echo("DELETE FROM hardmode_modes WHERE id={$id}"); ?>
+            </code>
+        </pre>
     </div>
 </div>
 
