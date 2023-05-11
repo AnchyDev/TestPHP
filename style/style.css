@@ -24,6 +24,13 @@ body {
     background-color: red;
 }
 
+.nav-item {
+    color: white;
+}
+.nav-item-active {
+    color: yellow;
+}
+
 .content {
     background-color: green;
 }
