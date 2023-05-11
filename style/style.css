@@ -9,6 +9,15 @@
     --main-back-color: rgb(43, 43, 43);
 }
 
+@media screen and (max-width=600) {
+    .header {
+        flex-direction: column !important;
+    }
+    .nav-menu {
+        flex-direction: column !important;
+    }
+}
+
 body {
     height: 100vh;
 }
