@@ -18,10 +18,8 @@
 
 <div class="content">
     <form action="./hardmode.php" method="GET">
-        <label for="hm-id">Id</label>
-        <input type="text" id="hm-id" name="id"><br><br>
-        <label for="hm-name">Name</label>
-        <input type="text" id="hm-name" name="name"><br><br>
+        <input type="text" id="hm-id" name="id" placeholder="Id" value="<?php echo($id) ?>"><br><br>
+        <input type="text" id="hm-name" name="name" placeholder="Name" value="<?php echo($name) ?>"><br><br>
         <button type="submit">Create</button>
     </form>
 
