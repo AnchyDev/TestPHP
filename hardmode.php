@@ -15,7 +15,7 @@
         <button type="submit">Create</button>
     </form>
     <div>
-        <?php echo("DELETE FROM hardmode_modes WHERE id=" + $id); ?>
+        <?php echo("DELETE FROM hardmode_modes WHERE id={$id}"); ?>
     </div>
 </div>
 
