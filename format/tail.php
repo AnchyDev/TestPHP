@@ -1,5 +1,5 @@
             <div class="footer">
-                All Rights Reserved © AnchyDev
+                All Rights Reserved &copy; AnchyDev
             </div>
         </div>
     </body>
