@@ -10,7 +10,12 @@
 
     $canGenerateSql = false;
 
-    if(!isset($id) && !isset($name))
+    function isEmpty($var)
+    {
+        return $var === '';
+    }
+
+    if(!isEmpty($id) && !isEmpty($name))
     {
         $canGenerateSql = true;
     }
