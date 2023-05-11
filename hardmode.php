@@ -2,22 +2,20 @@
     $PAGE_TITLE = "HardMode";
     require_once('./format/head.php');
 
+    $id = $_GET["id"];
     $name = $_GET["name"];
-
-    if($name)
-    {
-        echo "<script type='text/javascript'>alert('$name');</script>";
-    }
 ?>
 
 <div class="content">
     <form action="./hardmode.php" method="GET">
+        <label for="hm-id">Id</label>
+        <input type="text" id="hm-id" name="id"><br><br>
         <label for="hm-name">Name</label>
         <input type="text" id="hm-name" name="name"><br><br>
         <button type="submit">Create</button>
     </form>
     <div>
-        <?php echo($name); ?>
+        <?php echo("DELETE FROM hardmode_modes WHERE id=" + $id); ?>
     </div>
 </div>
 
