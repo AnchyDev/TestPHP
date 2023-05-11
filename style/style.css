@@ -71,12 +71,12 @@ body {
     gap: 10px;
 
     margin: 10px;
-}
-.site-logo img {
-    max-height: 50px;
 
     transition: transform 0.25s;
 }
-.site-logo img:hover {
+.site-logo img {
+    max-height: 50px;
+}
+.site-logo:hover {
     transform: scale(1.25);
 }
