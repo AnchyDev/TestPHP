@@ -29,6 +29,8 @@ body {
 .nav-menu {
     display: flex;
     flex-direction: row;
+    flex-grow: 1;
+
     gap: 10px;
 
     margin: 10px;
