@@ -1,3 +1,7 @@
+<?php 
+    $PAGE_TITLE = "Untitled";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>

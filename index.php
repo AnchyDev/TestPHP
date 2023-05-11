@@ -1,5 +1,7 @@
-<?php include('./format/head.php'); ?>
-<?php $PAGE_TITLE = "Home"; ?>
+<?php require_once('./format/head.php'); ?>
+<?php 
+    $PAGE_TITLE = "Home"; 
+?>
 
 <div class="header">
     Header
@@ -13,4 +15,4 @@
     Footer
 </div>
 
-<?php include('./format/tail.php'); ?>
+<?php require_once('./format/tail.php'); ?>
