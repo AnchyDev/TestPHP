@@ -1,6 +1,6 @@
-<?php require_once('./format/head.php'); ?>
 <?php 
-    $PAGE_TITLE = "Home"; 
+    require_once('./format/head.php');
+    $PAGE_TITLE = "Home";
 ?>
 
 <div class="header">

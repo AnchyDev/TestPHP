@@ -1,5 +1,5 @@
 <?php 
-    global $PAGE_TITLE = "Untitled";
+    $PAGE_TITLE = "Untitled";
 ?>
 
 <!DOCTYPE html>
