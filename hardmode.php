@@ -14,7 +14,8 @@
         <input type="text" id="hm-name" name="name"><br><br>
         <button type="submit">Create</button>
     </form>
-    <div>
+    
+    <div class="fs-code">
         <?php echo("DELETE FROM hardmode_modes WHERE id={$id}"); ?>
     </div>
 </div>

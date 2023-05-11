@@ -73,10 +73,6 @@ body {
     background-color: var(--main-back-color);
 }
 
-.fs-header {
-    font-size: 1.5rem;
-}
-
 .site-logo {
     display: flex;
     flex-direction: row;
@@ -95,4 +91,18 @@ body {
 }
 .site-logo:hover {
     transform: scale(1.05);
+}
+
+.fs-header {
+    font-size: 1.5rem;
+}
+
+.fs-code {
+    font-size: 0.9rem;
+    
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 5px;
+    background-color: rgb(218, 218, 218);
+
+    padding: 5px;
 }
