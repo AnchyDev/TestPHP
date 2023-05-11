@@ -83,14 +83,9 @@ body {
     margin: 10px;
 
     color: white;
-
-    transition: transform 0.25s;
 }
 .site-logo img {
     max-height: 50px;
-}
-.site-logo:hover {
-    transform: scale(1.05);
 }
 
 .fs-header {
