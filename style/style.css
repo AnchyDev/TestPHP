@@ -89,6 +89,9 @@ body {
 .site-logo img {
     max-height: 50px;
 }
+.site-logo a {
+    color: white;
+}
 .site-logo:hover {
     transform: scale(1.05);
 }
