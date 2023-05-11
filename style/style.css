@@ -74,4 +74,6 @@ body {
 }
 .site-logo img {
     max-height: 50px;
+
+    transition: height 5s, width 5s;
 }
