@@ -10,10 +10,12 @@
     <body>
         <div class="container">
             <div class="header">
-                <div class="site-logo">
+                <a class="site-logo" href="./index.php">
                     <img src="./images/logo.png">
-                    <a class="fs-header" href="./index.php">AnchyDev</a>
-                </div>
+                    <div class="fs-header">
+                        AnchyDev
+                    </div>
+                </a>
                 <div class="nav-menu">
                     <a class="<?php echo ($PAGE_TITLE == "Home") ? "nav-item active" : "nav-item"; ?>" href="./index.php">Home</a>
                     <a class="<?php echo ($PAGE_TITLE == "Contact") ? "nav-item active" : "nav-item"; ?>" href="./contact.php">Contact</a>
