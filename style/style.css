@@ -15,6 +15,12 @@
     }
     .nav-menu {
         flex-direction: column !important;
+
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .site-logo {
+        justify-content: center;
     }
 }
 
