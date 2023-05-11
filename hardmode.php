@@ -2,14 +2,11 @@
     $PAGE_TITLE = "HardMode";
     
     require_once('./format/head-start.php');
+    require_once('./format/head-end.php');
+    require_once('./format/body-start.php');
 
     $id = $_GET["id"];
     $name = $_GET["name"];
-?>
-
-<?php
-    require_once('./format/head-end.php');
-    require_once('./format/body-start.php');
 ?>
 
 <div class="content">
