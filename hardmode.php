@@ -7,6 +7,13 @@
 
     $id = $_GET["id"];
     $name = $_GET["name"];
+
+    $canGenerateSql = false;
+
+    if($id && $name)
+    {
+        $canGenerateSql = true;
+    }
 ?>
 
 <div class="content">
@@ -18,9 +25,14 @@
         <button type="submit">Create</button>
     </form>
 
-    <div class="fs-code">
-        <?php echo("DELETE FROM hardmode_modes WHERE id={$id}"); ?>
-    </div>
+    <?php
+    if($canGenerateSql)
+    {
+        echo('<div class="fs-code">');
+        echo("DELETE FROM hardmode_modes WHERE id={$id}");
+        echo('</div>');
+    }
+    ?>
 </div>
 
 <?php require_once('./format/body-end.php'); ?>
