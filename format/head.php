@@ -9,3 +9,7 @@
     </head>
     <body>
         <div class="container">
+        <div class="header">
+            <a class="<?php echo ($PAGE_TITLE == "Home") ? "nav-item-active" : "nav-item"; ?>" href="./index.php">Home</a>
+            <a class="<?php echo ($PAGE_TITLE == "Contact") ? "nav-item-active" : "nav-item"; ?>" href="./contact.php">Contact</a>
+        </div>
