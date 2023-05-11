@@ -32,8 +32,7 @@ body {
     flex-grow: 1;
 
     gap: 25px;
-
-    margin-right: 10px;
+    margin-right: 25px;
 
     align-items: center;
     justify-content: right;
