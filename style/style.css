@@ -28,15 +28,19 @@ body {
     display: flex;
     flex-direction: row;
     gap: 10px;
+
+    margin: 10px;
 }
 
 .nav-item {
     color: white;
+
+    transition: color 0.25s;
 }
 .nav-item.active {
     color: dodgerblue;
 }
-.nav-item#hover {
+.nav-item:hover {
     color: dodgerblue;
 }
 
