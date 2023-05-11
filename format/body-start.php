@@ -3,9 +3,6 @@
         <div class="header">
             <a class="site-logo" href="./index.php">
                 <img src="./images/logo.png">
-                <div class="fs-header">
-                    AnchyDev
-                </div>
             </a>
             <div class="nav-menu">
                 <a class="<?php echo ($PAGE_TITLE == "Home") ? "nav-item active" : "nav-item"; ?>" href="./index.php"><i class="ph ph-house"></i> Home</a>
