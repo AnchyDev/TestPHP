@@ -54,7 +54,9 @@ body {
 
 .content {
     flex-grow: 1;
-    background-color: green;
+
+    color: rgb(43, 43, 43);
+    background-color: rgb(233, 233, 233);
 }
 
 .footer {
