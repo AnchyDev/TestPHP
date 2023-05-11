@@ -101,10 +101,9 @@ body {
 }
 .site-logo img {
     max-height: 50px;
-    transition: filter 0.25s;
 }
 .site-logo img:hover {
-    filter:drop-shadow(5px 5px 10px black);
+    filter: drop-shadow(5px 5px 10px black);
 }
 
 .fs-header {
