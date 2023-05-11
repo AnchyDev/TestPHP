@@ -8,6 +8,7 @@
     text-decoration: none;
 
     --main-active-color: rgb(14, 208, 62);
+    --main-back-color: rgb(43, 43, 43);
 }
 
 body {
@@ -22,7 +23,7 @@ body {
 }
 
 .header {
-    background-color: rgb(43, 43, 43);
+    background-color: var(--main-back-color);
 
     display: flex;
     flex-direction: row;
@@ -60,7 +61,7 @@ body {
 }
 
 .footer {
-    background-color: blue;
+    background-color: var(--main-back-color);
 }
 
 .fs-header {
