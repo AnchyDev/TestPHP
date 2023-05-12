@@ -4,8 +4,6 @@
     require_once('./format/head-start.php');
 ?>
 <script>
-let cookieElement = document.getElementById("prompt-cookies");
-
 function EnableCookies()
 {
     document.cookie = "allow-cookies=true; expires=Thu, 1 Dec 2024 12:00:00 UTC; path=/";
@@ -14,6 +12,7 @@ function EnableCookies()
 
 function HideCookiePrompt()
 {
+    let cookieElement = document.getElementById("prompt-cookies");
     cookieElement.style.display = "none";
 }
 </script>
