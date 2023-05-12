@@ -6,6 +6,7 @@
     text-decoration: none;
 
     --main-active-color: rgb(0, 255, 64);
+    --secondary-active-color: red;
     --main-back-color: rgb(43, 43, 43);
 }
 
@@ -132,8 +133,8 @@ body {
     padding: 10px;
     width: 100%;
 
-    color: white;
-    background-color: red;
+    color: var(--secondary-active-color);
+    background-color: var(--main-back-color);
 
     justify-content: center;
     align-items: center;
