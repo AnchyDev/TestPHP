@@ -147,7 +147,7 @@ body {
     padding: 10px;
     width: 100%;
 
-    color: var(--secondary-active-color);
+    color: white;
     background-color: var(--main-back-color);
 
     justify-content: center;
