@@ -10,3 +10,16 @@
         <link rel="stylesheet" href="./style/style.css">
 
         <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <script>
+        function EnableCookies()
+        {
+            document.cookie = "allow-cookies=true; expires=Thu, 1 Dec 2024 12:00:00 UTC; path=/";
+            HideCookiePrompt();
+        }
+
+        function HideCookiePrompt()
+        {
+            let cookieElement = document.getElementById("prompt-cookies");
+            cookieElement.style.display = "none";
+        }
+        </script>

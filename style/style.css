@@ -120,3 +120,11 @@ body {
 
     padding: 5px;
 }
+
+.p-cookies {
+    display: flex;
+    flex-direction: row;
+    
+    position: fixed;
+    top: 100%;
+}
