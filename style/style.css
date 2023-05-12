@@ -122,6 +122,20 @@ body {
     padding: 5px;
 }
 
+.fs-nice-button {
+    padding: 5px;
+    background-color: white;
+    border: 0px;
+    border-radius: 5px;
+
+    transition: background-color 0.25s, color 0.25s;
+}
+
+.fs-nice-button:hover {
+    background-color: var(--secondary-active-color);
+    color: white;
+}
+
 .p-cookies {
     display: flex;
     flex-direction: row;
