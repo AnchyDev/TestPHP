@@ -26,16 +26,27 @@
             <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required><br><br>
 
             <?php
-                $u1 = $_POST['username'];
-                $p1 = $_POST['psw'];
-                $p2 = $_POST['psw-repeat'];
-
-                function Validate($username, $password, $password2)
+                function Validate()
                 {
-                    if(!isset($username) || !isset($password) || !isset($password2))
+                    if($_SERVER['REQUEST_METHOD'] != 'POST')
                     {
-                        return "Fields not set.";
+                        return false;
                     }
+
+                    if(!isset($_POST['username']))
+                    {
+                        return 'Please enter a username.';
+                    }
+
+                    if(!isset($_POST['psw']) || 
+                        !isset($_POST['psw-repeat']))
+                    {
+                        return 'Please enter a password.';
+                    }
+
+                    $username = $_POST['username'];
+                    $password = $_POST['psw'];
+                    $password2 = $_POST['psw-repeat'];
 
                     if($password !== $password2)
                     {
@@ -43,7 +54,7 @@
                     }
                 }
 
-                $validation = Validate($u1, $p1, $p2);
+                $validation = Validate();
                 if($validation)
                 {
                     echo("<b style='color: red;'>{$validation}</b>");
