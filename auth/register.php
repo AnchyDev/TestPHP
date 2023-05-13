@@ -23,7 +23,7 @@
             <input type="password" placeholder="Enter Password" name="psw" id="psw" required><br><br>
 
             <label for="psw-repeat"><b>Repeat Password</b></label><br>
-            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required><br><br>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required><br>
 
             <?php
                 function Validate()
