@@ -11,11 +11,11 @@
         connectedCallback()
         {
             console.log('test');
+        }
 
-            this.refreshItems = function()
-            {
-                console.log('refreshed');
-            }
+        this.refreshItems = function()
+        {
+            console.log('refreshed');
         }
     }
 
