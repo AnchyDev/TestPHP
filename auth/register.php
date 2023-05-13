@@ -22,22 +22,24 @@
         <label for="psw-repeat"><b>Repeat Password</b></label><br>
         <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required><br><br>
 
+        <?php
+            $username = $_POST['username'];
+            $password = $_POST['psw'];
+            $password2 = $_POST['psw-repeat'];
+
+            if($password !== $password2)
+            {
+                echo("<b style='color: red;'>Passwords did not match!</b>");
+            }
+
+            echo("<br>");
+        ?>
+
         <br><hr><br>
 
         <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p><br>
         <button type="submit" class="fs-nice-button">Register</button>
     </form>
-
-    <?php
-        $username = $_POST['username'];
-        $password = $_POST['psw'];
-        $password2 = $_POST['psw-repeat'];
-
-        if($password !== $password2)
-        {
-            echo("<b style='color: red;'>Passwords do not match!</b>");
-        }
-    ?>
 </div>
 
 <?php require_once('../format/body-end.php'); ?>
