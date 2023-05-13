@@ -1,8 +1,4 @@
-<?php 
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
-
+<?php
     $PAGE_TITLE = "Register";
     
     require_once('./format/head-start.php');
@@ -29,14 +25,6 @@
         <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
         <button type="submit" class="fs-nice-button">Register</button>
     </form>
-
-    <?php
-        $username = $_POST['username'];
-        $password = $_POST['psw'];
-        $password2 = $_POST['psw-repeat'];
-
-        echo("{$username} : {$psw} : {$psw-repeat}")
-    ?>
 </div>
 
 <?php require_once('./format/body-end.php'); ?>
