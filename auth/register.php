@@ -26,47 +26,18 @@
             <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required><br>
 
             <?php
-                function Validate()
-                {
-                    if($_SERVER['REQUEST_METHOD'] != 'POST')
-                    {
-                        return true;
-                    }
-
-                    if(!isset($_POST['username']))
-                    {
-                        return 'Please enter a username.';
-                    }
-
-                    if(!isset($_POST['psw']) || 
-                        !isset($_POST['psw-repeat']))
-                    {
-                        return 'Please enter a password.';
-                    }
-
-                    $username = $_POST['username'];
-                    $password = $_POST['psw'];
-                    $password2 = $_POST['psw-repeat'];
-
-                    if($password !== $password2)
-                    {
-                        return "Passwords did not match!";
-                    }
-
-                    return false;
-                }
-
+                include_once(LOCAL_ROOT_DIR . '/auth/validator.php');
                 $validation = Validate();
-                if($validation)
+                if($validation->Status == ValidationStatus::Failure)
                 {
                     echo("<br>");
-                    echo("<b style='color: red;'>{$validation}</b>");
+                    echo("<b style='color: red;'>{$validation->Message}</b>");
                     echo("<br>");
                 }
-                else
+                else if($validation->Status == ValidationStatus::Success)
                 {
                     echo("<br>");
-                    echo("<b style='color: lime;'>Account created!</b>");
+                    echo("<b style='color: lime;'>{$validation->Message}</b>");
                     echo("<br>");
                 }
             ?>
