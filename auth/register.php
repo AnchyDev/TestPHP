@@ -24,7 +24,7 @@
 
         <br><hr><br>
 
-        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p><br>
         <button type="submit" class="fs-nice-button">Register</button>
     </form>
 
@@ -33,7 +33,10 @@
         $password = $_POST['psw'];
         $password2 = $_POST['psw-repeat'];
 
-        echo("{$username} : {$password} : {$password2}")
+        if($password !=== $password2)
+        {
+            echo("<b style='color: red;'>Passwords do not match!</b>");
+        }
     ?>
 </div>
 
