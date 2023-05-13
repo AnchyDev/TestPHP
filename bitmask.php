@@ -19,13 +19,12 @@
 
 <div class="content">
     <label for="dropdown-datatype">Data Type</label>
-    <select id="dropdown-datatype" name="dropdown-datatype" onchange="">
+    <select id="dropdown-datatype" name="dropdown-datatype" onchange="DataTypeChanged()">
         <option value="uint8">UInt8</option>
         <option value="uint16">UInt16</option>
         <option value="uint32" selected>UInt32</option>
         <option value="uint64">UInt64</option>
     </select>
-    Bitmask Content
 </div>
 
 <?php require_once(LOCAL_ROOT_DIR . '/format/body-end.php'); ?>
