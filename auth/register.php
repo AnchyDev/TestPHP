@@ -1,9 +1,9 @@
 <?php
     $PAGE_TITLE = "Register";
     
-    require_once('./format/head-start.php');
-    require_once('./format/head-end.php');
-    require_once('./format/body-start.php');
+    require_once('../format/head-start.php');
+    require_once('../format/head-end.php');
+    require_once('../format/body-start.php');
 ?>
 
 <div class="content">
@@ -25,6 +25,14 @@
         <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
         <button type="submit" class="fs-nice-button">Register</button>
     </form>
+
+    <?php
+        $username = $_POST['username'];
+        $password = $_POST['psw'];
+        $password2 = $_POST['psw-repeat'];
+
+        echo("{$username} : {$psw} : {$psw-repeat}")
+    ?>
 </div>
 
-<?php require_once('./format/body-end.php'); ?>
+<?php require_once('../format/body-end.php'); ?>
