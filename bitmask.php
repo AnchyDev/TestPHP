@@ -13,11 +13,13 @@
             console.log('test');
         }
 
-        refreshItems = function()
+        refreshItems()
         {
-            console.log('refreshed');
+            console.log("refreshed");
         }
     }
+
+    customElements.define("bitmask-editor", BitmaskEditor);
 
     let currentDataType = "uint32";
     function DataTypeChanged()
@@ -28,8 +30,6 @@
         let bitmaskEditorElement = document.getElementById("bitmask-editor");
         bitmaskEditorElement.refreshItems();
     }
-
-    customElements.define("bitmask-editor", BitmaskEditor);
 </script>
 <?php
     require_once(LOCAL_ROOT_DIR . '/format/head-end.php');
