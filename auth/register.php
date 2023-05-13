@@ -7,7 +7,7 @@
 ?>
 
 <div class="content">
-    <form action="/auth/register.php" method="POST">
+    <form action="https://anchy.dev/TestPHP/auth/register.php" method="POST">
         <h1>Register</h1>
         <p>Please fill in this form to create an account.</p>
 
