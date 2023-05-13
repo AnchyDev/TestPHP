@@ -1,5 +1,5 @@
 <?php 
-    require_once($_SERVER['DOCUMENT_ROOT'] . '/common.php');
+    require_once($_SERVER['DOCUMENT_ROOT'] . '/TestPHP/common.php');
 
     $PAGE_TITLE = "Home";
 
