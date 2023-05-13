@@ -57,7 +57,7 @@
                 $validation = Validate();
                 if($validation)
                 {
-                    echo("<b style='color: red;'>{$validation}</b>");
+                    echo("<br><b style='color: red;'>{$validation}</b>");
                     echo("<br>");
                 }
             ?>
