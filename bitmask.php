@@ -13,7 +13,7 @@
             console.log('test');
         }
 
-        this.refreshItems = function()
+        refreshItems = function()
         {
             console.log('refreshed');
         }
