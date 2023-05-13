@@ -82,8 +82,11 @@ body {
 
 .panel {
     padding: 15px;
-    background-color: rgb(231, 231, 231);
-    border: 1px solid rgb(173, 173, 173);
+    
+    background-color: rgb(246, 246, 246);
+
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 5px;
 }
 
 .footer {

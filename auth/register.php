@@ -12,7 +12,7 @@
             <h1>Register</h1>
             <p>Please fill in this form to create an account.</p>
 
-            <br><hr><br>
+            <br><hr style="color: white;"><br>
 
             <label for="username"><b>Username</b></label><br>
             <input type="text" placeholder="Enter Username" name="username" id="username" required><br><br>
@@ -49,7 +49,7 @@
                 }
             ?>
 
-            <br><hr><br>
+            <br><hr style="color: white;"><br>
 
             <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p><br>
             <button type="submit" class="fs-nice-button">Register</button>
