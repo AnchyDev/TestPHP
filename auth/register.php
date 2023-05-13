@@ -31,7 +31,7 @@
         $password = $_POST['psw'];
         $password2 = $_POST['psw-repeat'];
 
-        echo("{$username} : {$psw} : {$psw-repeat}")
+        echo("{$username} : {$password} : {$password2}")
     ?>
 </div>
 
