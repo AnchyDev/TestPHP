@@ -30,7 +30,7 @@
                 {
                     if($_SERVER['REQUEST_METHOD'] != 'POST')
                     {
-                        return false;
+                        return true;
                     }
 
                     if(!isset($_POST['username']))
@@ -52,12 +52,21 @@
                     {
                         return "Passwords did not match!";
                     }
+
+                    return false;
                 }
 
                 $validation = Validate();
                 if($validation)
                 {
-                    echo("<br><b style='color: red;'>{$validation}</b>");
+                    echo("<br>");
+                    echo("<b style='color: red;'>{$validation}</b>");
+                    echo("<br>");
+                }
+                else
+                {
+                    echo("<br>");
+                    echo("<b style='color: lime;'>Account created!</b>");
                     echo("<br>");
                 }
             ?>
