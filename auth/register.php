@@ -30,9 +30,9 @@
 
                 function Validate($username, $password, $password2)
                 {
-                    if(!isset($password) || !isset($password2))
+                    if(!isset($username) || !isset($password) || !isset($password2))
                     {
-                        return "Passwords not set.";
+                        return "Fields not set.";
                     }
 
                     if($password !== $password2)
