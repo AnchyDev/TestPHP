@@ -33,7 +33,7 @@
         $password = $_POST['psw'];
         $password2 = $_POST['psw-repeat'];
 
-        if($password !=== $password2)
+        if($password !== $password2)
         {
             echo("<b style='color: red;'>Passwords do not match!</b>");
         }
