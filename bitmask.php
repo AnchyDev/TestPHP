@@ -10,7 +10,7 @@
     {
         connectedCallback()
         {
-            
+            console.log('test');
         }
 
         refreshItems()
