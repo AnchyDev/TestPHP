@@ -1,14 +1,16 @@
 <?php
+    require_once($_SERVER['DOCUMENT_ROOT'] . '/TestPHP/common.php');
+
     $PAGE_TITLE = "Register";
-    
-    require_once($LOCAL_ROOT_DIR . '/format/head-start.php');
-    require_once($LOCAL_ROOT_DIR . '/format/head-end.php');
-    require_once($LOCAL_ROOT_DIR . '/format/body-start.php');
+
+    require_once(LOCAL_ROOT_DIR . '/format/head-start.php');
+    require_once(LOCAL_ROOT_DIR . '/format/head-end.php');
+    require_once(LOCAL_ROOT_DIR . '/format/body-start.php');
 ?>
 
 <div class="content">
     <div class="panel">
-        <form action="https://anchy.dev/TestPHP/auth/register.php" method="POST">
+        <form action="<?php echo(REMOTE_ROOT_DIR); ?>/auth/register.php" method="POST">
             <h1>Register</h1>
             <p>Please fill in this form to create an account.</p>
 
@@ -57,4 +59,4 @@
     </div>
 </div>
 
-<?php require_once('../format/body-end.php'); ?>
+<?php require_once(LOCAL_ROOT_DIR . '/format/body-end.php'); ?>
