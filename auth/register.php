@@ -1,9 +1,9 @@
 <?php
     $PAGE_TITLE = "Register";
     
-    require_once('../format/head-start.php');
-    require_once('../format/head-end.php');
-    require_once('../format/body-start.php');
+    require_once($LOCAL_ROOT_DIR . '/format/head-start.php');
+    require_once($LOCAL_ROOT_DIR . '/format/head-end.php');
+    require_once($LOCAL_ROOT_DIR . '/format/body-start.php');
 ?>
 
 <div class="content">
