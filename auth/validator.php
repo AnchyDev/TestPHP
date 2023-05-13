@@ -18,29 +18,28 @@
         }
     }
 
-    function Validate()
+    function CanValidate()
     {
-        if($_SERVER['REQUEST_METHOD'] != 'POST')
-        {
-            return new ValidationResult(ValidationStatus::None, '');
-        }
+        return ($_SERVER['REQUEST_METHOD'] == 'POST');
+    }
 
-        if(!isset($_POST['username']))
+    function ValidateUsernamePasswordFields($username, $password, $passwordRepeat)
+    {
+        if(!isset($_POST[$username]))
         {
             return new ValidationResult(ValidationStatus::Failure, 'Please enter a username.');
         }
 
-        if(!isset($_POST['psw']) || 
-            !isset($_POST['psw-repeat']))
+        if(!isset($_POST[$password]) || 
+        !isset($_POST[$passwordRepeat]))
         {
             return new ValidationResult(ValidationStatus::Failure, 'Please enter a password.');
         }
 
-        $username = $_POST['username'];
-        $password = $_POST['psw'];
-        $password2 = $_POST['psw-repeat'];
+        $p = $_POST[$password];
+        $p2 = $_POST[$passwordRepeat];
 
-        if($password !== $password2)
+        if($p !== $p2)
         {
             return new ValidationResult(ValidationStatus::Failure, 'Password did not match.');
         }

@@ -27,18 +27,23 @@
 
             <?php
                 include_once(LOCAL_ROOT_DIR . '/auth/validator.php');
-                $validation = Validate();
-                if($validation->Status == ValidationStatus::Failure)
+
+                if(CanValidate())
                 {
-                    echo("<br>");
-                    echo("<b style='color: red;'>{$validation->Message}</b>");
-                    echo("<br>");
-                }
-                else if($validation->Status == ValidationStatus::Success)
-                {
-                    echo("<br>");
-                    echo("<b style='color: lime;'>{$validation->Message}</b>");
-                    echo("<br>");
+                    $validation = ValidateUsernamePasswordFields('username', 'psw', 'psw-repeat');
+
+                    if($validation->Status == ValidationStatus::Failure)
+                    {
+                        echo("<br>");
+                        echo("<b style='color: red;'>{$validation->Message}</b>");
+                        echo("<br>");
+                    }
+                    else if($validation->Status == ValidationStatus::Success)
+                    {
+                        echo("<br>");
+                        echo("<b style='color: lime;'>{$validation->Message}</b>");
+                        echo("<br>");
+                    }
                 }
             ?>
 
