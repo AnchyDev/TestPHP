@@ -68,12 +68,16 @@ body {
 }
 
 .content {
+    display: flex;
     flex-grow: 1;
 
     color: rgb(43, 43, 43);
     background-color: rgb(255, 255, 255);
 
     padding: 25px;
+
+    align-items: center;
+    justify-content: center;
 }
 
 .footer {
