@@ -7,52 +7,54 @@
 ?>
 
 <div class="content">
-    <form action="https://anchy.dev/TestPHP/auth/register.php" method="POST">
-        <h1>Register</h1>
-        <p>Please fill in this form to create an account.</p>
+    <div class="panel">
+        <form action="https://anchy.dev/TestPHP/auth/register.php" method="POST">
+            <h1>Register</h1>
+            <p>Please fill in this form to create an account.</p>
 
-        <br><hr><br>
+            <br><hr><br>
 
-        <label for="username"><b>Username</b></label><br>
-        <input type="text" placeholder="Enter Username" name="username" id="username" required><br><br>
+            <label for="username"><b>Username</b></label><br>
+            <input type="text" placeholder="Enter Username" name="username" id="username" required><br><br>
 
-        <label for="psw"><b>Password</b></label><br>
-        <input type="password" placeholder="Enter Password" name="psw" id="psw" required><br><br>
+            <label for="psw"><b>Password</b></label><br>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required><br><br>
 
-        <label for="psw-repeat"><b>Repeat Password</b></label><br>
-        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required><br><br>
+            <label for="psw-repeat"><b>Repeat Password</b></label><br>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required><br><br>
 
-        <?php
-            $u1 = $_POST['username'];
-            $p1 = $_POST['psw'];
-            $p2 = $_POST['psw-repeat'];
+            <?php
+                $u1 = $_POST['username'];
+                $p1 = $_POST['psw'];
+                $p2 = $_POST['psw-repeat'];
 
-            function Validate($username, $password, $password2)
-            {
-                if(!isset($password) || !isset($password2))
+                function Validate($username, $password, $password2)
                 {
-                    return "Passwords not set.";
+                    if(!isset($password) || !isset($password2))
+                    {
+                        return "Passwords not set.";
+                    }
+
+                    if($password !== $password2)
+                    {
+                        return "Passwords did not match!";
+                    }
                 }
 
-                if($password !== $password2)
+                $validation = Validate($u1, $p1, $p2);
+                if($validation)
                 {
-                    return "Passwords did not match!";
+                    echo("<b style='color: red;'>{$validation}</b>");
+                    echo("<br>");
                 }
-            }
+            ?>
 
-            $validation = Validate($u1, $p1, $p2);
-            if($validation)
-            {
-                echo("<b style='color: red;'>{$validation}</b>");
-                echo("<br>");
-            }
-        ?>
+            <br><hr><br>
 
-        <br><hr><br>
-
-        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p><br>
-        <button type="submit" class="fs-nice-button">Register</button>
-    </form>
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p><br>
+            <button type="submit" class="fs-nice-button">Register</button>
+        </form>
+    </div>
 </div>
 
 <?php require_once('../format/body-end.php'); ?>
