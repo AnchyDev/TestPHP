@@ -1,8 +1,8 @@
 <body>
     <div class="container">
         <div class="header">
-            <a class="site-logo" href="./index.php">
-                <img src="./images/logo.png">
+            <a class="site-logo" href="https://anchy.dev/TestPHP/index.php">
+                <img src="https://anchy.dev/TestPHP/images/logo.png">
             </a>
             <div class="nav-menu">
                 <a class="<?php echo ($PAGE_TITLE == "Home") ? "nav-item active" : "nav-item"; ?>" href="./index.php"><i class="ph ph-house"></i> Home</a>

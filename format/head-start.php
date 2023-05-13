@@ -7,7 +7,7 @@
 
         <title><?php echo $PAGE_TITLE; ?></title>
 
-        <link rel="stylesheet" href="https://anchy.dev/style/style.css">
+        <link rel="stylesheet" href="https://anchy.dev/TestPHP/style/style.css">
 
         <script src="https://unpkg.com/@phosphor-icons/web"></script>
         <script>
