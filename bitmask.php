@@ -18,7 +18,7 @@
     {
         connectedCallback()
         {
-            refreshItems();
+
         }
 
         clearItems()
@@ -34,7 +34,7 @@
 
             for(let i = 0; i < itemCount; i++)
             {
-                let shiftValue = 1 << i;
+                let shiftValue = Number(BigInt.asUintN(itemCount, 1 << i));
                 let testElement = document.createElement("b");
                 testElement.innerHTML = `Element: ${shiftValue}`;
                 this.appendChild(testElement);
