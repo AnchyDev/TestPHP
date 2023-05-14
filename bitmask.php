@@ -8,10 +8,10 @@
 <script>
     let currentDataType = "uint32";
     let dataTypeValues = {
-        "uint8": 8n,
-        "uint16": 16n,
-        "uint32": 32n,
-        "uint64": 64n
+        "uint8": 8,
+        "uint16": 16,
+        "uint32": 32,
+        "uint64": 64
     }
 
     class BitmaskEditor extends HTMLElement 
