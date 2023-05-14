@@ -7,6 +7,12 @@
 ?>
 <script>
     let currentDataType = "uint32";
+    let dataTypeValues = {
+        "uint8": 8,
+        "uint16": 16,
+        "uint32": 32,
+        "uint64": 64
+    }
 
     class BitmaskEditor extends HTMLElement 
     {
@@ -17,7 +23,8 @@
 
         refreshItems()
         {
-            console.log(currentDataType);
+            let itemCount = dataTypeValues[currentDataType];
+            console.log(itemCount);
         }
     }
 
@@ -27,7 +34,7 @@
     {
         return document.getElementsByTagName("bitmask-editor")[0];
     }
-    
+
     function DataTypeChanged()
     {
         let dataTypeElement = document.getElementById("dropdown-datatype");
