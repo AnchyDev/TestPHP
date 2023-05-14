@@ -166,3 +166,8 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+bitmask-editor {
+    display: flex;
+    flex-direction: column;
+}

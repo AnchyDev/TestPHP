@@ -24,7 +24,13 @@
         refreshItems()
         {
             let itemCount = dataTypeValues[currentDataType];
-            console.log(itemCount);
+
+            for(let i = 0; i < itemCount; i++)
+            {
+                let testElement = document.createElement("b");
+                testElement.innerHTML = `Element: ${i}`;
+                this.appendChild(testElement);
+            }
         }
     }
 
