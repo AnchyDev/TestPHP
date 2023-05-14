@@ -32,7 +32,7 @@
         let dataTypeElement = document.getElementById("dropdown-datatype");
         currentDataType = dataTypeElement.value;
 
-        GetBitmaskEditor.refreshItems();
+        GetBitmaskEditor().refreshItems();
     }
 </script>
 <?php
