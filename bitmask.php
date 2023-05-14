@@ -55,14 +55,14 @@
 ?>
 
 <div class="content">
-    <label for="dropdown-datatype">Data Type</label>
-    <select id="dropdown-datatype" name="dropdown-datatype" onchange="DataTypeChanged()">
-        <option value="uint8">UInt8</option>
-        <option value="uint16">UInt16</option>
-        <option value="uint32" selected>UInt32</option>
-        <option value="uint64">UInt64</option>
-    </select>
     <div id="bitmask-editor">
+        <label for="dropdown-datatype">Data Type</label>
+        <select id="dropdown-datatype" name="dropdown-datatype" onchange="DataTypeChanged()">
+            <option value="uint8">UInt8</option>
+            <option value="uint16">UInt16</option>
+            <option value="uint32" selected>UInt32</option>
+            <option value="uint64">UInt64</option>
+        </select>
         <bitmask-editor>
         </bitmask-editor>
     </div>
