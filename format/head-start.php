@@ -8,6 +8,7 @@
         <title><?php echo $PAGE_TITLE; ?></title>
 
         <link rel="stylesheet" href="<?php echo(REMOTE_ROOT_DIR); ?>/style/style.css">
+        <link rel="icon" type="image/x-icon" href="<?php echo(REMOTE_ROOT_DIR); ?>/images/favicon.png">
 
         <script src="https://unpkg.com/@phosphor-icons/web"></script>
         <script>
