@@ -55,7 +55,7 @@
 ?>
 
 <div class="content">
-    <label for="dropdown-datatype">Data Type </label>
+    <label for="dropdown-datatype">Data Type</label>
     <select id="dropdown-datatype" name="dropdown-datatype" onchange="DataTypeChanged()">
         <option value="uint8">UInt8</option>
         <option value="uint16">UInt16</option>

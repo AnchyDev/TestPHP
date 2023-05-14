@@ -167,6 +167,11 @@ body {
     align-items: center;
 }
 
+.bitmask-editor {
+    display: flex;
+    flex-direction: column;
+}
+
 bitmask-editor {
     display: flex;
     flex-direction: column;
