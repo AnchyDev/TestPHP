@@ -18,11 +18,18 @@
     {
         connectedCallback()
         {
-            console.log('test');
+            refreshItems();
+        }
+
+        clearItems()
+        {
+            this.innerHTML = '';
         }
 
         refreshItems()
         {
+            this.clearItems();
+            
             let itemCount = dataTypeValues[currentDataType];
 
             for(let i = 0; i < itemCount; i++)
