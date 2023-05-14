@@ -6,6 +6,8 @@
     require_once(LOCAL_ROOT_DIR . '/format/head-start.php');
 ?>
 <script>
+    let currentDataType = "uint32";
+
     class BitmaskEditor extends HTMLElement 
     {
         connectedCallback()
@@ -15,7 +17,7 @@
 
         refreshItems()
         {
-            console.log("refreshed");
+            console.log(currentDataType);
         }
     }
 
@@ -25,8 +27,7 @@
     {
         return document.getElementsByTagName("bitmask-editor")[0];
     }
-
-    let currentDataType = "uint32";
+    
     function DataTypeChanged()
     {
         let dataTypeElement = document.getElementById("dropdown-datatype");
