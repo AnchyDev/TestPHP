@@ -34,7 +34,7 @@
 
             for(let i = 0; i < itemCount; i++)
             {
-                let shiftValue = Number(BigInt.asUintN(itemCount, (1n << i)));
+                let shiftValue = Number(BigInt.asUintN(itemCount, BigInt(1 << i)));
                 let testElement = document.createElement("b");
                 testElement.innerHTML = `Element: ${shiftValue}`;
                 this.appendChild(testElement);
