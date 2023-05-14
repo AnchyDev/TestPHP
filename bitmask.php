@@ -8,10 +8,10 @@
 <script>
     let currentDataType = "uint32";
     let dataTypeValues = {
-        "uint8": 8,
-        "uint16": 16,
-        "uint32": 32,
-        "uint64": 64
+        "uint8": 8n,
+        "uint16": 16n,
+        "uint32": 32n,
+        "uint64": 64n
     }
 
     class BitmaskEditor extends HTMLElement 
@@ -34,7 +34,7 @@
 
             for(let i = 0; i < itemCount; i++)
             {
-                let shiftValue = Number(BigInt.asUintN(itemCount, 1 << i));
+                let shiftValue = Number(BigInt.asUintN(itemCount, (1n << i)));
                 let testElement = document.createElement("b");
                 testElement.innerHTML = `Element: ${shiftValue}`;
                 this.appendChild(testElement);
