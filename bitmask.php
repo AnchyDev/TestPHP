@@ -21,14 +21,18 @@
 
     customElements.define("bitmask-editor", BitmaskEditor);
 
+    function GetBitmaskEditor()
+    {
+        return document.getElementsByTagName("bitmask-editor")[0];
+    }
+
     let currentDataType = "uint32";
     function DataTypeChanged()
     {
         let dataTypeElement = document.getElementById("dropdown-datatype");
         currentDataType = dataTypeElement.value;
 
-        let bitmaskEditorElement = document.getElementById("bitmask-editor");
-        bitmaskEditorElement.refreshItems();
+        GetBitmaskEditor.refreshItems();
     }
 </script>
 <?php
